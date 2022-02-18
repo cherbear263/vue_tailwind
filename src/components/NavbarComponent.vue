@@ -21,13 +21,20 @@
       <a href="#" class="block px-2 py-1 font-semibold text-white rounded hover:bg-gray-800">List your property</a>
       <a href="#" class="block px-2 py-1 mt-1 font-semibold text-white rounded sm:ml-2 sm:mt-0 hover:bg-gray-800">Trips</a>
       <a href="#" class="block px-2 py-1 mt-1 font-semibold text-white rounded sm:ml-2 sm:mt-0 hover:bg-gray-800">Messages</a>
+      <account-dropdown class="ml-6"/>
     </div>
+      
     </header>
 </template>
 <script>
+import AccountDropdown from './AccountDropdown.vue';
 
 export default ({
+
   name: 'NavbarComponent',
+  components: {
+    AccountDropdown,
+  },
   data() {
     return {
       isOpen: false,
