@@ -1,11 +1,20 @@
 <template>
-<div class="overflow-hidden bg-white border rounded-lg">
-  <img :src="property.imageUrl" :alt="property.imageAlt">
-  <div class="p-6 text-gray-800">
-          <div class="text-sm font-semibold tracking-wide text-gray-600 uppercase">
-        {{ property.beds }} beds &bull; {{ property.baths }} baths
-      </div>
-      <h4 class="text-lg font-semibold leading-tight truncate">{{ property.title }}</h4>
+<div class="">
+  <!-- This is how you would do it in IE11 if you require IE11 support - though it is not as accessible for screen readers 
+  <div class="h-48 bg-center bg-cover" :style="{ backgroundImage: `url('${property.imageUrl}')`}"></div> -->
+  <div class="relative pb-5/6" >
+    <img class="object-cover w-full h-full rounded-lg shadow-md " :src="property.imageUrl" :alt="property.imageAlt" />
+  </div>
+  <div class="relative px-4 -mt-16">
+    <div class="p-4 bg-white rounded-lg shadow-lg">
+      <div class="p-4 text-gray-800">
+        <div class="flex items-baseline">
+          <span class="inline-block px-2 py-1 text-xs font-semibold tracking-wide text-purple-800 uppercase bg-purple-300 rounded-full">New</span>
+          <div class="ml-2 text-sm font-semibold tracking-wide text-gray-600 uppercase">
+            {{ property.beds }} beds &bull; {{ property.baths }} baths
+          </div>
+        </div>
+      <h4 class="mt-1 text-lg font-semibold leading-tight truncate">{{ property.title }}</h4>
 
       <div class="mt-1">
         {{ property.formattedPrice }}
@@ -18,8 +27,9 @@
         <span class="ml-2 text-sm text-gray-600 "> {{property.reviewCount }} reviews</span>
       </div>
       </div>
+    </div>
 </div>
-  
+  </div>
 </template>
 <script>
 

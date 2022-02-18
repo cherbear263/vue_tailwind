@@ -1,5 +1,6 @@
 <template>
 <div class="bg-gray-300">
+  <navbar-component/>
     <div class="flex bg-gray-100">
       <div
         class="p-4 m-auto sm:max-w-xl lg:max-w-full lg:w-1/2 lg:py-24 lg:px-12"
@@ -63,6 +64,7 @@
 import PropertyCard from './components/PropertyCard.vue';
 import DestinationCard from './components/DestinationCard.vue';
 import './assets/tailwind.css';
+import NavbarComponent from './components/NavbarComponent.vue';
 
 
 export default {
@@ -70,6 +72,7 @@ export default {
   components: { 
     DestinationCard,
     PropertyCard,
+    NavbarComponent,
      },
   data() {
     return {
