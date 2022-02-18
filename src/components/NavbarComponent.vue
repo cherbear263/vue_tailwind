@@ -21,8 +21,18 @@
       <a href="#" class="block px-2 py-1 font-semibold text-white rounded hover:bg-gray-800">List your property</a>
       <a href="#" class="block px-2 py-1 mt-1 font-semibold text-white rounded sm:ml-2 sm:mt-0 hover:bg-gray-800">Trips</a>
       <a href="#" class="block px-2 py-1 mt-1 font-semibold text-white rounded sm:ml-2 sm:mt-0 hover:bg-gray-800">Messages</a>
-      <account-dropdown class="ml-6"/>
+      <account-dropdown class="hidden sm:ml-6 sm:block"/>
+      <div class="px-2 mt-4 border-t border-gray-800 sm:hidden ">
+        <div class="flex items-center mt-3 sm:hidden">
+          <img class="object-cover w-8 h-8 overflow-hidden border-2 border-gray-600 rounded-full sm:hidden" src="https://images.unsplash.com/photo-1607746882042-944635dfe10e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="avatar" />
+          <span class="ml-3 font-semibold text-white sm:hidden">Jane Doe</span>
+        </div>
+        <a href="#" class="block mt-2 text-gray-400 hover:text-white sm:hidden">Account settings</a>
+        <a href="#" class="block text-gray-400 hover:text-white sm:hidden">Support</a>
+        <a href="#" class="block text-gray-400 hover:text-white sm:hidden">Sign out</a>
+      </div>
     </div>
+
       
     </header>
 </template>
